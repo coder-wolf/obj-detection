@@ -36,4 +36,5 @@ with open(classFile,"rt") as f:
                 cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
 
         cv2.imshow("output",img)
-        cv2.waitKey(1)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
